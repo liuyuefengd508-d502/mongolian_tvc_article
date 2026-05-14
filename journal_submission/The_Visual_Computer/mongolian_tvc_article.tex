@@ -46,7 +46,7 @@ The main contributions are summarized as follows:
     \item We formulate a reusable UDA benchmark for low-resource vertical cursive script recognition, including source/target split rules, leakage-prevention constraints, and evaluation protocols for cultural heritage archives.
     \item We propose VS-MSSE, a geometric stroke enhancement module that embeds the vertical-spine prior of traditional Mongolian script into multi-scale visual feature extraction.
     \item We combine sequence-aware adversarial alignment with valid-frame-normalized CTC entropy pseudo-label refinement, improving reliability under sparse and degraded CTC predictions.
-    \item We provide code, pretrained models, benchmark protocols, and a releasable desensitized dataset subset to support independent replication and future comparison.
+    \item We provide public code, benchmark protocols, annotation examples, and a releasable desensitized dataset subset to support independent replication and future comparison.
 \end{itemize}
 
 \section{Related Work}
@@ -260,7 +260,7 @@ Furthermore, our framework assumes isolated text lines. Developing robust end-to
 \section{Data Availability and Reproducibility Statement}
 To enhance transparency and reproducibility, the project repository will be permanently maintained at \url{https://github.com/liuyuefengd508-d502/mongolian_tvc_article} and archived on Zenodo with concept DOI \url{https://doi.org/10.5281/zenodo.20176970}. The current public release corresponding to version \texttt{v1.0.0} is archived under version DOI \url{https://doi.org/10.5281/zenodo.20176971}. The repository is explicitly linked to the manuscript submitted to \textit{The Visual Computer} and includes a citation notice requesting users to cite this manuscript when using the code, models, or benchmark protocol.
 
-The release includes environment requirements, training and evaluation scripts, key algorithm implementations for SASE, VS-MSSE, sequence-aware DANN, and valid-frame-normalized CTC entropy pseudo-label refinement, pretrained model weights, inference examples, and benchmark protocols. Because the complete authentic archive is subject to institutional and cultural-heritage access restrictions, we release a desensitized subset of isolated column patches, split files, annotation format examples, and scripts that reproduce all reported evaluation procedures when the restricted data are available under permission.
+The release includes environment requirements, training and evaluation scripts, key algorithm implementations for SASE, VS-MSSE, sequence-aware DANN, and valid-frame-normalized CTC entropy pseudo-label refinement, inference examples, annotation format examples, and benchmark protocols. Because the complete authentic archive is subject to institutional and cultural-heritage access restrictions, and because large internal training artifacts are not part of the lightweight public release, we release a desensitized subset of isolated column patches, split files, and scripts that reproduce the reported evaluation procedures when the restricted data are available under permission.
 
 \section{Conclusion}
 This paper establishes a robust Unsupervised Domain Adaptation baseline for isolated traditional Mongolian historical text line recognition. By introducing the physical SASE engine, the geometry-aware VS-MSSE module, and correcting the CTC-entropy pseudo-label strategy, we achieved a highly statistically significant CER of $7.8 \pm 0.2\%$.

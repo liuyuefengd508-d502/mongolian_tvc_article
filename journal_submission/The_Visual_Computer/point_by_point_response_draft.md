@@ -58,7 +58,7 @@ We have prepared and publicly released a repository associated with the revised 
 - Zenodo Concept DOI: `https://doi.org/10.5281/zenodo.20176970`
 - Zenodo Version DOI for `v1.0.0`: `https://doi.org/10.5281/zenodo.20176971`
 
-The public release includes manuscript materials, public figures, lightweight research code, reproducibility metadata, and benchmark-related scripts and documentation. Because the complete authentic archival dataset is subject to institutional and cultural-heritage access restrictions, it cannot be fully released publicly. To support reproducibility as far as possible, we provide a releasable subset, example annotation formats, split/protocol descriptions, and scripts that reproduce the reported evaluation pipeline when authorized users have access to the restricted data.
+The public release includes manuscript materials, public figures, lightweight research code, reproducibility metadata, benchmark-related scripts, protocol descriptions, and annotation examples. Because the complete authentic archival dataset is subject to institutional and cultural-heritage access restrictions, it cannot be fully released publicly. In addition, large internal training artifacts are not part of the lightweight public repository. To support reproducibility as far as possible, we therefore provide a releasable subset, example annotation formats, split/protocol descriptions, and scripts that reproduce the reported evaluation pipeline when authorized users have access to the restricted data.
 
 Corresponding manuscript revisions:
 
@@ -139,7 +139,7 @@ Revision: We strengthened the textual explanation of the qualitative figures and
 
 Comment addressed: Code and reproducibility resources should be permanently hosted and documented.
 
-Revision: We expanded the Data Availability and Reproducibility Statement. It now specifies the public repository, the Zenodo concept DOI, the first release DOI, and the types of released materials, including scripts, protocols, figures, and releasable benchmark resources.
+Revision: We expanded the Data Availability and Reproducibility Statement. It now specifies the public repository, the Zenodo concept DOI, the first release DOI, and the types of released materials, including scripts, protocols, figures, annotation examples, and releasable benchmark resources.
 
 Public release information:
 
