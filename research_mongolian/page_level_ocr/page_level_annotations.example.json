@@ -1,0 +1,29 @@
+{
+  "dataset": {
+    "name": "Traditional Mongolian Page-Level OCR",
+    "version": "example",
+    "split_manifest": "page_split_manifest.csv",
+    "notes": "Example only. Replace boxes and transcripts with manual annotations."
+  },
+  "pages": [
+    {
+      "page_id": "80-48-61-1",
+      "image_path": "/absolute/path/to/80-48-61-1.tif",
+      "split": "test",
+      "width": 3000,
+      "height": 4200,
+      "columns": [
+        {
+          "column_id": "80-48-61-1_col_000",
+          "bbox": [120, 80, 260, 4100],
+          "reading_order": 0,
+          "orientation": "correct",
+          "transcript": "",
+          "degradation_tags": ["severe_fade", "bleed_through"],
+          "ignore": false,
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

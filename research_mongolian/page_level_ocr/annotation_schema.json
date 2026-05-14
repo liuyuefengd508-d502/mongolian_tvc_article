@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Traditional Mongolian Page-Level OCR Annotation",
+  "type": "object",
+  "required": ["dataset", "pages"],
+  "properties": {
+    "dataset": {
+      "type": "object",
+      "required": ["name", "version", "split_manifest"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "split_manifest": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page_id", "image_path", "split", "columns"],
+        "properties": {
+          "page_id": { "type": "string" },
+          "image_path": { "type": "string" },
+          "split": { "enum": ["train_unlabeled", "val", "test"] },
+          "width": { "type": "integer", "minimum": 1 },
+          "height": { "type": "integer", "minimum": 1 },
+          "columns": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["column_id", "bbox", "reading_order", "orientation"],
+              "properties": {
+                "column_id": { "type": "string" },
+                "bbox": {
+                  "type": "array",
+                  "description": "[x_min, y_min, x_max, y_max] in page pixel coordinates",
+                  "minItems": 4,
+                  "maxItems": 4,
+                  "items": { "type": "number" }
+                },
+                "reading_order": { "type": "integer", "minimum": 0 },
+                "orientation": { "enum": ["correct", "rotated_90_ccw", "rotated_90_cw", "rotated_180", "ambiguous"] },
+                "transcript": { "type": "string" },
+                "degradation_tags": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "severe_fade",
+                      "bleed_through",
+                      "red_seal",
+                      "fold",
+                      "stain",
+                      "broken_spine",
+                      "dense_background",
+                      "marginalia",
+                      "overlap",
+                      "other"
+                    ]
+                  }
+                },
+                "ignore": { "type": "boolean", "default": false },
+                "notes": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

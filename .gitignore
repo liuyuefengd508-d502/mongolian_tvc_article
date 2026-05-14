@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+env/
+**/.venv_labelstudio/
+
+# Ignore unrelated nested repositories
+AI-Scientist/
+superpowers_framework/
+.agents/
+
+# Model weights and large artifacts
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.bin
+
+# Archives and temporary bundles
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# LaTeX intermediates
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Experiment outputs and caches
+research_mongolian/runs/
+research_mongolian/page_level_ocr/results/
+research_mongolian/page_level_ocr/runs/
+research_mongolian/page_level_ocr/page_level_yolo_dataset_105/
+research_mongolian/page_level_ocr/page_level_yolo_dataset/
+research_mongolian/page_level_ocr/page_split_manifest.csv*
+research_mongolian/page_level_ocr/*.bak
+
+# Large page-level OCR workspace: ignore by default, then opt back in for
+# top-level public scripts/docs/metadata only.
+research_mongolian/page_level_ocr/**
+!research_mongolian/page_level_ocr/
+!research_mongolian/page_level_ocr/*.py
+!research_mongolian/page_level_ocr/*.md
+!research_mongolian/page_level_ocr/*.json
+research_mongolian/page_level_ocr/page_level_annotations_*/
+research_mongolian/page_level_ocr/page_level_annotations*.json
+!research_mongolian/page_level_ocr/page_level_annotations.example.json
+
+# Local env or project-local secrets/config
+research_mongolian/page_level_ocr/label_studio_local.env
+
+# Unrelated legacy OCR scratch files in the workspace root
+OCR.pdf
+OCR_Final_Corrected.pdf
+OCR_Final_Corrected.tex
+OCR_paragraphs.txt
+OCR_textutil.html
+OCR_verbatim_text.txt
+copy_apacite.py
+parse_images.py
+patch_latex.py
+test_images2.py
+test_images3.py
+images/
+
+# Keep final manuscript PDFs only if intentionally tracked.
+# Intermediate PDFs can be removed from the index later if needed.

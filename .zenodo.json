@@ -1,0 +1,33 @@
+{
+  "title": "Mongolian TVC Article Repository",
+  "description": "Public repository for manuscript materials, lightweight research code, figures, and reproducibility metadata associated with the submission \"Unsupervised Domain Adaptation for Vertical Cursive Script Recognition with Geometric Stroke Enhancement and Pseudo-Label Refinement\" to The Visual Computer.",
+  "upload_type": "software",
+  "publication_type": "other",
+  "creators": [
+    {
+      "name": "Liu, Yuefeng",
+      "affiliation": "School of Digital and Intelligent Industry (School of Cyber Science and Technology), Inner Mongolia University of Science and Technology"
+    },
+    {
+      "name": "Liang, Lanying",
+      "affiliation": "Archives, Inner Mongolia University of Science and Technology"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Liu, Yuefeng",
+      "type": "ContactPerson",
+      "affiliation": "School of Digital and Intelligent Industry (School of Cyber Science and Technology), Inner Mongolia University of Science and Technology"
+    }
+  ],
+  "keywords": [
+    "traditional Mongolian script",
+    "vertical cursive script recognition",
+    "unsupervised domain adaptation",
+    "document image analysis",
+    "cultural heritage digitization"
+  ],
+  "license": "MIT",
+  "language": "eng",
+  "access_right": "open"
+}

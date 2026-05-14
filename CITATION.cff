@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated The Visual Computer manuscript and the archived software release."
+title: "Mongolian TVC Article Repository"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Yuefeng
+    email: liuyuefengd508@gmail.com
+    affiliation: "School of Digital and Intelligent Industry (School of Cyber Science and Technology), Inner Mongolia University of Science and Technology"
+  - family-names: Liang
+    given-names: Lanying
+    affiliation: "Archives, Inner Mongolia University of Science and Technology"
+repository-code: "https://github.com/liuyuefengd508-d502/mongolian_tvc_article"
+license: MIT
+keywords:
+  - traditional Mongolian script
+  - vertical cursive script recognition
+  - unsupervised domain adaptation
+  - document image analysis
+  - cultural heritage digitization
+abstract: >
+  Repository for manuscript materials, lightweight research code, figures, and
+  reproducibility metadata associated with the submission "Unsupervised Domain
+  Adaptation for Vertical Cursive Script Recognition with Geometric Stroke
+  Enhancement and Pseudo-Label Refinement" to The Visual Computer.
