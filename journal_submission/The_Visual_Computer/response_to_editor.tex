@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\setstretch{1.12}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Point-by-Point Response to the Editorial Comments}}\\[0.8em]
+{\large Submission ID: 5e3eebcf-7254-4032-8499-a733072c8fe7}\\[0.4em]
+{\large Journal: \textit{The Visual Computer}}\\[0.4em]
+{\large Revised manuscript title:}\\[0.2em]
+\textit{Unsupervised Domain Adaptation for Vertical Cursive Script Recognition with Geometric Stroke Enhancement and Pseudo-Label Refinement}
+\end{center}
+
+\vspace{0.8em}
+
+Dear Professor Sheng and Editorial Team,
+
+We sincerely thank you for your careful editorial assessment and for the opportunity to submit a substantially revised manuscript. We have revised the paper extensively to improve its fit with the visual computing community, clarify its reusable research contribution, strengthen its presentation and discoverability, and enhance transparency and reproducibility through public code and archival release materials.
+
+Below we respond point by point to the major editorial concerns and summarize the corresponding revisions in the manuscript.
+
+\section{Responses to the Three Required Questions}
+
+\subsection{Does the manuscript clearly articulate a reusable problem formulation, benchmark, dataset, codebase, taxonomy, or methodological insight that other researchers can cite and build upon?}
+
+Yes. In the revised manuscript, we explicitly formulate the task as strict unsupervised domain adaptation for isolated vertical cursive script recognition. The revised problem formulation now clearly defines the labeled synthetic source domain, the unlabeled authentic target domain, the target-label exclusion rule during training and model selection, and the final evaluation protocol.
+
+We also strengthened the paper as a reusable benchmark by clarifying:
+\begin{itemize}[leftmargin=1.5em]
+\item the source/target split design;
+\item page-level partitioning to avoid cross-column leakage;
+\item dataset statistics and evaluation metrics;
+\item baseline settings and ablation settings;
+\item the key reusable methodological insights, namely SASE, VS-MSSE, sequence-aware adversarial alignment, and valid-frame-normalized CTC entropy pseudo-label refinement.
+\end{itemize}
+
+Corresponding manuscript revisions:
+\begin{itemize}[leftmargin=1.5em]
+\item A concise contribution statement has been added to the Introduction.
+\item The Methodology section now states the strict UDA setting more explicitly.
+\item The Experiments section now presents the benchmark design, data-splitting rules, and evaluation setup more clearly.
+\end{itemize}
+
+\subsection{Are the title, abstract, keywords, contribution statement, figures, and experimental comparisons sufficiently discoverable by researchers outside the immediate subfield?}
+
+Yes. We revised the title, abstract, keywords, and contribution statement to make the paper easier to discover and understand for readers in visual computing, document image analysis, cultural heritage digitization, and low-resource recognition, beyond the immediate Mongolian OCR subfield.
+
+Specifically:
+\begin{itemize}[leftmargin=1.5em]
+\item The revised title foregrounds the broader task of vertical cursive script recognition.
+\item The revised abstract reduces excessive technical density and more clearly states the cultural-heritage motivation, the core method, the benchmark value, and the main quantitative result.
+\item The keywords now include broader discovery terms such as ``vertical cursive script recognition,'' ``document image analysis,'' and ``cultural heritage digitization.''
+\item The literature review now more clearly connects our work to recent visual-computing topics in structure-preserving restoration and structure-aware recognition.
+\end{itemize}
+
+Corresponding manuscript revisions:
+\begin{itemize}[leftmargin=1.5em]
+\item The title, abstract, and keywords were revised.
+\item The Introduction now includes a clearer contribution summary.
+\item The Related Work section now better situates the manuscript within the scope of \textit{The Visual Computer}.
+\item The figure descriptions and experimental framing now more clearly emphasize the visual-structural motivation of the proposed method.
+\end{itemize}
+
+\subsection{Are code, data, pretrained models, demos, or benchmark protocols made available, when ethically and technically feasible?}
+
+Yes, to the extent ethically and technically feasible.
+
+We have prepared and publicly released a repository associated with the revised manuscript:
+\begin{itemize}[leftmargin=1.5em]
+\item GitHub repository: \url{https://github.com/liuyuefengd508-d502/mongolian_tvc_article}
+\item Zenodo Concept DOI: \url{https://doi.org/10.5281/zenodo.20176970}
+\item Zenodo Version DOI for \texttt{v1.0.0}: \url{https://doi.org/10.5281/zenodo.20176971}
+\end{itemize}
+
+The public release includes manuscript materials, public figures, lightweight research code, reproducibility metadata, and benchmark-related scripts and documentation. Because the complete authentic archival dataset is subject to institutional and cultural-heritage access restrictions, it cannot be fully released publicly. To support reproducibility as far as possible, we provide a releasable subset, example annotation formats, split/protocol descriptions, and scripts that reproduce the reported evaluation pipeline when authorized users have access to the restricted data.
+
+Corresponding manuscript revisions:
+\begin{itemize}[leftmargin=1.5em]
+\item The abstract now includes the public repository and archival availability statement.
+\item The Data Availability and Reproducibility Statement now includes the GitHub repository, Zenodo concept DOI, and version DOI.
+\item The repository and archive pages explicitly state that the code is directly related to the manuscript submitted to \textit{The Visual Computer} and request citation of the manuscript and software archive.
+\end{itemize}
+
+\section{Detailed Revision Summary}
+
+\subsection{Title revision}
+\textbf{Comment addressed:} The original title was less discoverable outside the immediate OCR subfield.
+
+\textbf{Revision:} \textit{Unsupervised Domain Adaptation for Vertical Cursive Script Recognition with Geometric Stroke Enhancement and Pseudo-Label Refinement}
+
+\textbf{Rationale:} The revised title better reflects the reusable task setting, the geometric visual-computing contribution, and the pseudo-label refinement strategy.
+
+\subsection{Abstract revision}
+\textbf{Comment addressed:} The abstract should more clearly communicate the problem, contribution, results, and broader significance.
+
+\textbf{Revision:} We rewrote the abstract to improve logical flow, reduce unnecessary technical density, highlight the cultural-heritage context, report the main quantitative result more clearly, and explicitly state code and archive availability.
+
+\subsection{Keywords revision}
+\textbf{Comment addressed:} The paper should be more discoverable to readers beyond the immediate niche.
+
+\textbf{Revision:} We revised the keywords to include broader discovery-oriented terms: vertical cursive script recognition; traditional Mongolian script; historical archives; unsupervised domain adaptation; document image analysis; pseudo-label refinement; cultural heritage digitization.
+
+\subsection{Contribution statement added}
+\textbf{Comment addressed:} The manuscript should clearly articulate reusable contributions that other researchers can cite and build upon.
+
+\textbf{Revision:} We added a concise contribution list in the Introduction. It now explicitly states:
+\begin{itemize}[leftmargin=1.5em]
+\item the reusable UDA benchmark formulation;
+\item the VS-MSSE geometric stroke enhancement module;
+\item the sequence-aware adversarial alignment and valid-frame CTC entropy pseudo-label refinement strategy;
+\item the public release and reproducibility contribution.
+\end{itemize}
+
+\subsection{Relevance to \textit{The Visual Computer} strengthened}
+\textbf{Comment addressed:} The manuscript should better align with the journal's computer graphics and visual computing readership.
+
+\textbf{Revision:} We strengthened the Related Work discussion and selectively incorporated the recommended recent \textit{The Visual Computer} references:
+\begin{itemize}[leftmargin=1.5em]
+\item \textit{Detail-aware image denoising via structure preserved network and residual diffusion model}. \textit{The Visual Computer}, 2025, 41(1): 639--658.
+\item \textit{SATD: syntax-aware handwritten mathematical expression recognition based on tree-structured transformer decoder}. \textit{The Visual Computer}, 2025, 41(2): 883--900.
+\end{itemize}
+
+\textbf{Rationale:} These references help position the paper within current visual-computing discussions on structure-preserving enhancement and structure-aware recognition, without excessive citation.
+
+\subsection{Novelty clarified relative to UDA and text-recognition baselines}
+\textbf{Comment addressed:} The novelty and theoretical depth should be clarified more clearly.
+
+\textbf{Revision:} We clarified that conventional UDA methods mainly emphasize global feature alignment, whereas our method contributes:
+\begin{itemize}[leftmargin=1.5em]
+\item a script-geometry-aware visual prior through VS-MSSE;
+\item a corrected valid-frame CTC entropy criterion tailored to pseudo-label reliability in degraded sequence recognition.
+\end{itemize}
+
+\subsection{Comparative experiments and ablations clarified}
+\textbf{Comment addressed:} Comparative experiments should be stronger and more clearly presented.
+
+\textbf{Revision:} The revised manuscript preserves and clarifies comparisons against CRNN, TrOCR, PARSeq, CycleGAN+CRNN, DANN, CDAN, and a fully supervised upper-bound reference. We also present ablations for SASE, VS-MSSE, DANN, and pseudo-label refinement, together with architectural ablation for vertical asymmetric kernels.
+
+\subsection{Figure interpretation and visual validation strengthened}
+\textbf{Comment addressed:} More intuitive visual evidence should be provided for the proposed module.
+
+\textbf{Revision:} We strengthened the textual explanation of the qualitative figures and the Grad-CAM analysis. The revised text more clearly states that VS-MSSE activates along the central vertical spine and that the remaining error modes are primarily associated with broken spines, visually similar vowels, and background stains/noise.
+
+\subsection{Open-source and reproducibility statement expanded}
+\textbf{Comment addressed:} Code and reproducibility resources should be permanently hosted and documented.
+
+\textbf{Revision:} We expanded the Data Availability and Reproducibility Statement. It now specifies the public repository, the Zenodo concept DOI, the first release DOI, and the types of released materials, including scripts, protocols, figures, and releasable benchmark resources.
+
+Public release information:
+\begin{itemize}[leftmargin=1.5em]
+\item GitHub repository: \url{https://github.com/liuyuefengd508-d502/mongolian_tvc_article}
+\item Zenodo Concept DOI: \url{https://doi.org/10.5281/zenodo.20176970}
+\item Zenodo Version DOI (\texttt{v1.0.0}): \url{https://doi.org/10.5281/zenodo.20176971}
+\end{itemize}
+
+\subsection{Ethical and technical data-release constraints clarified}
+\textbf{Comment addressed:} Data should be released when ethically and technically feasible.
+
+\textbf{Revision:} We explicitly clarified that the complete authentic archival dataset is restricted by institutional and cultural-heritage access conditions. To balance reproducibility with these constraints, the revised manuscript commits to releasing public benchmark scaffolding, annotation examples, split/protocol descriptions, and code, while reserving full archival access for authorized use.
+
+\section{Closing Statement}
+
+We are grateful for the editorial guidance and believe the revised manuscript is substantially improved in clarity, presentation quality, reproducibility, and relevance to the readership of \textit{The Visual Computer}. We hope that the revised manuscript and this itemized response adequately address the editorial concerns and facilitate an efficient reassessment.
+
+\vspace{1em}
+
+Sincerely,\\
+Lanying Liang and Yuefeng Liu
+
+\end{document}
