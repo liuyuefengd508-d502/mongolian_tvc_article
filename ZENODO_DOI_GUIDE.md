@@ -1,5 +1,10 @@
 # Zenodo DOI Guide for This Repository
 
+Current Zenodo identifiers for this repository:
+
+- Concept DOI: `10.5281/zenodo.20176970`
+- Version DOI for `v1.0.0`: `10.5281/zenodo.20176971`
+
 This guide explains how to create the Zenodo DOI for:
 
 `https://github.com/liuyuefengd508-d502/mongolian_tvc_article`

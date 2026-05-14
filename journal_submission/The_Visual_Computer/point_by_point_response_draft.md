@@ -34,7 +34,7 @@ Yes, to the extent ethically and technically feasible. We will provide a permane
 
 The complete authentic archival dataset is subject to institutional and cultural-heritage access restrictions, so it cannot be fully released publicly. To support reproducibility, we will release a desensitized subset of isolated column patches, split files, annotation format examples, and scripts that reproduce the reported evaluation protocol when authorized users have access to the restricted data. The repository will explicitly state that the code and artifacts are associated with the manuscript submitted to The Visual Computer and will include a citation request for this manuscript.
 
-Revision made: The abstract and the Data Availability and Reproducibility Statement now include the public GitHub repository link and state that the permanent Zenodo DOI will be added immediately after the first public release is archived.
+Revision made: The abstract and the Data Availability and Reproducibility Statement now include the public GitHub repository link, the Zenodo concept DOI, and the first public release DOI.
 
 ## Detailed Revision List
 
@@ -108,7 +108,8 @@ Revision: We rewrote the Data Availability and Reproducibility Statement. It now
 Important action before submission: replace the placeholders below with final permanent links:
 
 - GitHub repository: `https://github.com/liuyuefengd508-d502/mongolian_tvc_article`
-- Zenodo DOI: to be inserted after the first public GitHub release is archived by Zenodo
+- Zenodo Concept DOI: `https://doi.org/10.5281/zenodo.20176970`
+- Zenodo Version DOI (`v1.0.0`): `https://doi.org/10.5281/zenodo.20176971`
 
 ### 10. Ethical and technical data-release constraints clarified
 

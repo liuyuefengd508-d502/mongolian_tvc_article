@@ -4,7 +4,9 @@ This repository contains the manuscript materials, lightweight research code, fi
 
 **Unsupervised Domain Adaptation for Vertical Cursive Script Recognition with Geometric Stroke Enhancement and Pseudo-Label Refinement**
 
-The repository is directly related to the manuscript currently submitted to *The Visual Computer*. If you use this code, protocol, or released artifacts, please cite the associated manuscript and the software archive DOI once available.
+The repository is directly related to the manuscript currently submitted to *The Visual Computer*. If you use this code, protocol, or released artifacts, please cite the associated manuscript and the Zenodo software archive.
+
+[![DOI](https://zenodo.org/badge/1238487178.svg)](https://doi.org/10.5281/zenodo.20176970)
 
 ## Repository structure
 
@@ -46,7 +48,10 @@ This repository supports the manuscript submitted to *The Visual Computer*. The 
 
 `https://github.com/liuyuefengd508-d502/mongolian_tvc_article`
 
-The Zenodo DOI will be added after the first public GitHub release is archived by Zenodo.
+The Zenodo archive is now available:
+
+1. Concept DOI: `10.5281/zenodo.20176970`
+2. Version DOI for `v1.0.0`: `10.5281/zenodo.20176971`
 
 ## Citation
 
